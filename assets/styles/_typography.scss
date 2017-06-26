@@ -1,0 +1,13 @@
+/* inconsolata-regular - latin */
+
+$font-size: 15px;  // default font size. Change here will adjust sizes across the board.
+$font-weight: 400; // sets the font weight
+
+$font-family: 'Inconsolata', monospace !important;
+$font-color: #222;  // default font color
+
+$heading-family: $font-family; // default heading (h1-h6) font
+$heading-color: $font-color; // default heading (h1-h6) color
+$heading-weight: 300; // sets the weight of the heading text
+
+$form-font: $font-family; // default form font
