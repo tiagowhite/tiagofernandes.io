@@ -44,7 +44,8 @@ let config = {
             },
             {
                 test: /\.(woff|woff2|eot|ttf|otf)$/,
-                use: ['file-loader']
+                use: ['file-loader?fonts/[name].[ext]&outputPath=/fonts&publicPath=../']
+
             },
             {
                 test: /\.scss$/,
