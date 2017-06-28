@@ -1,4 +1,4 @@
 
-var rightNow = Date.now()
-console.log(rightNow);
-// "October 23rd 2016, 9:30:24 pm"
+const baffle = require("baffle");
+
+var hello = baffle('h4.hello').reveal(1000);
