@@ -90,5 +90,5 @@ let config = {
         extractStyles,
         extractHtml
     ]
-}
-module.exports = config
+};
+module.exports = config;
