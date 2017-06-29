@@ -21,12 +21,13 @@
 		"pug-loader": "^2.3.0",
 		"sanitize.css": "^5.0.0",
 		"sass-loader": "^6.0.6",
-		"skeleton-sass-official": "^3.1.4",
 		"webpack": "2.2.1",
 		"webpack-dev-server": "2.2.1"
 	},
 	"dependencies": {
 		"baffle": "^0.3.6",
+		"flexboxgrid": "^6.3.1",
+		"normalize.css": "^7.0.0",
 		"three": "^0.86.0"
 	}
 }

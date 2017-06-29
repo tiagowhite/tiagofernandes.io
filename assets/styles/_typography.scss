@@ -6,6 +6,7 @@
   url('../fonts/inconsolata-v15-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
   url('../fonts/inconsolata-v15-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
+
 /* inconsolata-700 - latin */
 @font-face {
   font-family: 'Inconsolata';
@@ -15,18 +16,5 @@
   url('../fonts/inconsolata-v15-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
   url('../fonts/inconsolata-v15-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
-body, html {
-  font-family: 'Inconsolata', monospace;
-}
 
-$font-size: 15px;  // default font size. Change here will adjust sizes across the board.
-$font-weight: 400; // sets the font weight
 
-$font-family: 'Inconsolata', monospace !important;
-$font-color: #222;  // default font color
-
-$heading-family: $font-family; // default heading (h1-h6) font
-$heading-color: $font-color; // default heading (h1-h6) color
-$heading-weight: 300; // sets the weight of the heading text
-
-$form-font: $font-family; // default form font
