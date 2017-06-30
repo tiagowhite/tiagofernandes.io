@@ -1,0 +1,151 @@
+//== Basic Structure
+//
+body,
+html {
+  height: 100%;
+  background-color: $site-background;
+}
+
+body {
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, .5);
+  font-family: $font-family;
+}
+
+a,
+a:focus,
+a:hover {
+  color: #fff;
+}
+
+.wrapper {
+  display: table;
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+}
+
+.wrapper-inner {
+  display: table-cell;
+  vertical-align: top;
+}
+
+.content {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+//== Header
+//
+#tiagofernandes header > {
+  h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  nav ul { margin-left: 0; padding-left: 0;}
+  nav ul > {
+    margin: 0;
+    padding: 0;
+
+  }
+  nav > ul > li {
+    display: inline-block;
+  }
+  nav > ul > li + li {
+    margin-left: 20px;
+  }
+  nav > ul > li > a {
+    padding-right: 0;
+    padding-left: 0;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  nav > ul > li {
+    @include linx($pink-base);
+  }
+}
+
+@media (min-width: 768px) {
+  #tiagofernandes header > {
+    h3 {
+      margin-top: 20px;
+      height: 129px;
+      background: $site-logo no-repeat top center;
+      text-indent: -200000px;
+    }
+    nav {
+      margin-top: 10px;
+      text-align: center;
+    }
+
+  }
+}
+
+//== Content
+//
+#tiagofernandes section {
+  padding: 0 20px;
+  h1.hello {
+    color: $site-h1-hello;
+  }
+  p.lead {
+    color: $site-p-hello;
+  }
+  canvas#test {
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    margin: 2em;
+
+  }
+}
+
+
+
+
+//== Footer
+//
+#tiagofernandes footer {
+  color: #999; /* IE8 proofing */
+  color: rgba(255, 255, 255, .5);
+}
+
+//== Center
+//
+@media (min-width: 768px) {
+  #tiagofernandes header {
+    position: fixed;
+    top: 0;
+  }
+  #tiagofernandes footer {
+    position: fixed;
+    bottom: 0;
+  }
+  /* vertical centering */
+  .wrapper-inner {
+    vertical-align: middle;
+  }
+
+  /* widths */
+  #tiagofernandes {
+    header,
+    footer,
+    .content {
+      width: 100%;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  #tiagofernandes {
+    header,
+    footer,
+    .content {
+      width: 700px;
+    }
+  }
+}

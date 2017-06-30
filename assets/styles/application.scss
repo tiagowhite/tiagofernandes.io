@@ -1,8 +1,6 @@
 @import "~normalize.css";
 @import "~flexboxgrid";
+@import "mixins";
 @import "vars";
 @import "typography";
-
-body, html {
-  font-family: $font-family;
-}
+@import "structure";

@@ -28,6 +28,9 @@ let config = {
     'js/application': [
       path.resolve(__dirname, 'assets/js/application.js')
     ],
+    'js/3d': [
+      path.resolve(__dirname, 'assets/js/3d.js')
+    ]
 
   },
   output: {
@@ -46,7 +49,7 @@ let config = {
         test: /\.(jpg|png|svg)$/,
         loader: 'file-loader',
         options: {
-          name: '[path][name].[hash].[ext]',
+          name: '[name].[ext]',
           outputPath: 'img/',
           publicPath: '/'
         },

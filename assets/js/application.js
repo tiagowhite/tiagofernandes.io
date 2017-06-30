@@ -1,4 +1,7 @@
 
 const baffle = require("baffle");
 
-var hello = baffle('h4.hello').reveal(1000);
+var hello = baffle('.hello', {
+  characters: '"█▓▒░█▓▒░█▓▒░<>/"',
+  speed: 75
+}).reveal(1000);

@@ -1,10 +1,24 @@
 doctype html
 html(lang="en")
-  head
+  head(itemscope itemtype="http://schema.org/WebSite")
     include includes/head
-  body#tiagofernandes
-    include includes/header
-     block header
-      h4.hello this is more content to the header
-    include includes/content
+  body#tiagofernandes.active
+    .wrapper
+      .wrapper-inner
+        .content
+          header.inner.clearfix
+            h3 logo
+            nav
+             ul
+               li
+                a(href="#") LOREM
+               li
+                a(href="#") IPSUM
+               li
+                a(href="#") DOLOR
+
+          section.inner
+           canvas#test
+           h1.hello Lorem ipsum
+           p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi interdum lectus ac erat pharetra, eu ultricies nibh congue. Nunc a elementum tellus. Nunc sit amet pretium neque.
     include includes/footer
