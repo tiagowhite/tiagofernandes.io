@@ -20,11 +20,9 @@ let config = {
     index: [
       path.resolve(__dirname, 'assets/templates/index.pug')
     ],
-
     'css/application': [
       path.resolve(__dirname, 'assets/styles/application.scss')
     ],
-
     'js/application': [
       path.resolve(__dirname, 'assets/js/application.js')
     ],
@@ -89,6 +87,9 @@ let config = {
     ]
   },
   devtool: 'source-map',
+
+
+
   plugins: [
     new webpack.optimize.UglifyJsPlugin({
       sourceMapFilename: 'sourcemap.[ext].map',

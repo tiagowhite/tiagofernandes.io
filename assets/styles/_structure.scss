@@ -36,7 +36,6 @@ a:hover {
   margin-right: auto;
 }
 
-
 //== Header
 //
 #tiagofernandes header > {
@@ -44,7 +43,10 @@ a:hover {
     margin-top: 10px;
     margin-bottom: 10px;
   }
-  nav ul { margin-left: 0; padding-left: 0;}
+  nav ul {
+    margin-left: 0;
+    padding-left: 0;
+  }
   nav ul > {
     margin: 0;
     padding: 0;
@@ -103,9 +105,6 @@ a:hover {
 
   }
 }
-
-
-
 
 //== Footer
 //
