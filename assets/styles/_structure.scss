@@ -74,7 +74,7 @@ a:hover {
 @media (min-width: 768px) {
   #tiagofernandes header > {
     h3 {
-      margin-top: 20px;
+      margin-top: 20%;
       height: 129px;
       background: $site-logo no-repeat top center;
       text-indent: -200000px;
@@ -93,6 +93,9 @@ a:hover {
   padding: 0 20px;
   h1.hello {
     color: $site-h1-hello;
+  }
+  p {
+    text-align: justify;
   }
   p.lead {
     color: $site-p-hello;
