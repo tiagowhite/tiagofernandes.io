@@ -3,24 +3,13 @@ html(lang="en")
   head(itemscope itemtype="http://schema.org/WebSite")
     include includes/head
   body#tiagofernandes.active
+    .loader
+    .transition
     .wrapper
-      .wrapper-inner
-        .content
-          header.inner.clearfix
-            h3 logo
-            nav
-              ul
-                li
-                  a(href="#") LOREM
-                li
-                  a(href="#") IPSUM
-                li
-                  a(href="#") DOLOR
-
-          section.inner
-            h1.hello Front-end Developer
-            p I'm a web developer with +10 years of experience in the development of multiple platforms web projects.
-            p Specialties includes, strong capability in system integration with json, rest, java, php, ruby and rails, also, interaction design, user interface design, usability and front-end development.
-            p Some of my skills: Java, Rails, Php, JS, Angular, Jquery, Html5, css3, bootstrap, svn, git and agile methodologies.
-
-          include includes/footer
+      nav
+      header
+        .container
+          canvas(id="canvas-webgl", class="p-canvas-webgl")
+          img.logo(src="../img/logo0a.png" alt="Tiago de A. Fernandes" draggable="false")
+      main
+    include includes/footer

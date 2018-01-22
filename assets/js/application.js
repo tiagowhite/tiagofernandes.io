@@ -1,5 +1,5 @@
-
 const baffle = require("baffle");
+require('./BackgroundImage');
 
 var hello = baffle('.hello', {
   characters: '"█▓▒░█▓▒░█▓▒░<>/"',
