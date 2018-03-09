@@ -17,22 +17,19 @@ body {
   min-height: 100%;
   margin-bottom: -50px;
   color: #fff;
+  background: $site-background-image center center no-repeat;
   flex: 1 0 auto;
 }
 
 .wrapper > header {
-
   .container {
-
     width: 700px;
     margin: 0 auto;
     padding: 20px;
-
     img.logo {
       margin: 0 auto;
       display: block;
     }
-
   }
 }
 
@@ -52,8 +49,3 @@ footer {
   p { text-align: center }
 
 }
-
-
-
-
-
