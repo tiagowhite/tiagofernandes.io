@@ -17,8 +17,18 @@ body {
   min-height: 100%;
   margin-bottom: -50px;
   color: #fff;
-  background: $site-background-image center center no-repeat;
-  flex: 1 0 auto;
+
+  div#wrapper-bg {
+    background-image: $site-background-image;
+    overflow: visible;
+    background-size: cover;
+    background-position: center;
+    border: none;
+    animation: none;
+
+    -webkit-transform: translateZ(-3333.333333333333px) !important;
+    transform: translateZ(-3333.333333333333px) !important
+  }
 }
 
 .wrapper > header {
