@@ -5,11 +5,14 @@ html(lang="en")
   body#tiagofernandes.active
     .loader
     .transition
-    .wrapper
-      nav
-      header
-        .container
-          img.logo(src="../img/logo0a.png" alt="Tiago de A. Fernandes" draggable="false")
-      main
-      #wrapper-bg
-    include includes/footer
+    nav
+    header
+    .flex-container
+      .wrapper
+        .parallax-js#scene
+          .logo-container.layer(data-depth="0.25")
+            img.logo(src="../img/logo0a.png" alt="Tiago de A. Fernandes" draggable="false")
+          .wrapper-bg.layer(data-depth="0.10")
+            .bg
+  include includes/footer
+
