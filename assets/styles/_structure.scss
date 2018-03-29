@@ -45,7 +45,6 @@ body {
   justify-content: center
 }
 
-
 @media only screen and (min-width: 426px) {
   .flexContainer {
     margin-top: 0
@@ -70,6 +69,21 @@ body {
   width: 100%;
   max-width: 100vh;
   position: relative;
+  top: 150px;
+}
+
+.layer .inner {
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  -webkit-transform-origin: -30% 0%;
+  transform-origin: -30% 0%;
+}
+
+.inner {
+  top: 0;
+  left: 0;
+  position: absolute;
 }
 
 .wrapper-bg {
@@ -78,10 +92,11 @@ body {
   overflow: visible;
   pointer-events: none;
 }
+
 .bg {
   opacity: 1 !important;
-  width: 400vw !important;
-  height: 400vh !important;
+  width: 300vw !important;
+  height: 300vh !important;
   top: -150%;
   left: -170%;
   overflow: visible;
@@ -91,7 +106,7 @@ body {
   box-shadow: none !important;
   -webkit-animation: none !important;
   animation: none !important;
-  background-image: $site-background-image center;
+  background-image: $site-background-image;
   -webkit-transform: translateZ(-3333.333333333333px) !important;
   transform: translateZ(-3333.333333333333px) !important
 }
