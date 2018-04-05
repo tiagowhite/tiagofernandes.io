@@ -1,18 +1,19 @@
 doctype html
 html(lang="en")
-  head(itemscope itemtype="http://schema.org/WebSite")
-    include includes/head
+include includes/head
   body#tiagofernandes.active
-    .loader
-    .transition
-    nav
-    header
-    .flex-container
-      .wrapper
-        .parallax-js#scene
-          .layer.logo-container(data-depth="0.25")
+    div.row
+      div.col-md-12
+        .loader
+        .transition
+        header
+          div.name TIAGO DE ARAUJO FERNANDES
+          div.logo.box
             img.logo(src="../img/logo0a.png" alt="Tiago de A. Fernandes" draggable="false")
-          .layer.wrapper-bg(data-depth="0.10")
-            .inner.bg
+          nav
+            ul
+              li WORK
+              li LAB
+              li ABOUT
   include includes/footer
 

@@ -5,7 +5,7 @@ import Parallax from 'parallax-js';
 
 function app() {
   baffleRun();
-  parallaxRun();
+  /*parallaxRun();*/
 }
 
 function parallaxRun() {
