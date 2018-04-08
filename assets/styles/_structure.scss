@@ -8,6 +8,8 @@ html {
 
 body {
   font-family: $font-family-monospace;
+  font-weight: 300;
+  font-size: 15px;
   display: flex;
   flex-direction: column;
 }
@@ -20,18 +22,29 @@ header {
   display: -webkit-flex;
   display: flex;
 }
-header > .name > h1 { font-size: 18px; color: $pink-base; float: left;}
+header > .name > h1 { font-size: 15px; color: $pink-base; float: left; margin: 0; padding: 0;}
 header > .logo { width: 200px; text-align: center;  margin: 0 auto; display: flex; }
+
 header > nav { width: auto;  float: right;}
-header > nav > ul, header > nav > ul > li { list-style: none;}
+header > nav > ul, header > nav > ul > li { list-style: none; margin: 0 0; }
 header > nav > ul > li { display: inline; margin: 2vh; }
+
 header > nav > ul > li > a { text-decoration: none; margin: 0; padding: 0; transition: color .35s ease;}
-header > nav > ul > li > a { font-family: $font-family-monospace; color: $pink-base;  font-size: 18px; }
-
+header > nav > ul > li > a { color: $pink-base;}
 header > nav > ul > li > a:hover,
-header > nav > ul > li > a:active { color: $yellow-text; }
+header > nav > ul > li > a:active { color: $yellow-text; transform: translateX(-4px);}
 
-header > nav > ul > li > a:after, header > nav > ul > li > a:before {
+
+header > nav > ul > li > a:after  {
+  background-color: #f25757;
+  transition: all .25s cubic-bezier(.694,.048,.335,1)
+}
+header > nav > ul > li > a:before {
+  background-color: #235aa6;
+  transition: all .25s cubic-bezier(.694,.048,.335,1) .15s
+}
+header > nav > ul > li > a:after,
+header > nav > ul > li > a:before {
   content: "";
   position: absolute;
   bottom: 11px;
@@ -41,10 +54,15 @@ header > nav > ul > li > a:after, header > nav > ul > li > a:before {
   height: 3px;
   z-index: 2
 }
-
+@media only screen and (min-width: 64em) {
+  header > nav > ul > li > a:hover:after, header > nav > ul > li > a:hover:before {
+    width:100%;
+    left: 0;
+  }
+}
 
 footer {
-  width: 100%;
+  width: auto;
   height: 50px;
   margin: 0 auto;
 
