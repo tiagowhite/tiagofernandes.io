@@ -1,6 +1,13 @@
 //== Basic Structure
 
 
+
+header {
+  nav { 
+    h1 { color: $blue; }
+  }
+}
+
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;
      -moz-border-radius: $radius;
